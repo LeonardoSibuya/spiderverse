@@ -1,0 +1,46 @@
+.elenco {
+    
+
+    .container {
+        text-align: center;
+        max-width: 960px;
+        width: 100%;
+
+        h2 {
+            margin-top: 160px;
+            margin-bottom: 2px;
+        }
+
+        .button {
+            max-width: 32%;
+            margin: 0 auto;
+            text-align: center;
+            letter-spacing: normal;
+            
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+        &__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            padding: 0 20px;
+            margin: 0 28px;
+
+            &__item {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 28px;
+
+                img {
+                    width: 200px;
+                    height: 260px;
+                    margin-bottom: 16px;
+                    border-radius: 8px;
+                }
+            }
+    }
+}

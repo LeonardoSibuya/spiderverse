@@ -1,0 +1,21 @@
+.show {
+
+    &__container {
+        text-align: center;
+
+        h2 {
+            margin-top: 160px;
+            margin-bottom: 2px;
+        }
+
+        &__abas {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            font-size: 16px;
+        }
+
+    }
+}

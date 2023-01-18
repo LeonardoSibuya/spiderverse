@@ -1,0 +1,26 @@
+.sinopse {
+    .container {
+        text-align: center;
+
+        h2 {
+            margin-top: 160px;
+            margin-bottom: 2px;
+        }
+    }
+
+    &__content {
+        align-items: center;
+        display: flex;
+        width: 100%;
+
+        img {
+            max-width: 500px;
+            margin-right: 36px;
+            border-radius: 8px;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
