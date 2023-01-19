@@ -21,7 +21,7 @@
                     <a href="https://www.disneyplus.com/pt-br/movies/homem-aranha-no-aranhaverso/OtXRBHlsLLV9" target="_blank">Streaming</a>
                 </li>
                 <li class="header__links__item button">
-                    <a href="#">Trailer</a>
+                    <a href="#trailer">Trailer</a>
                 </li>
             </ul>
         </div>
@@ -30,7 +30,7 @@
     <section class="hero">
         <div class="container hero__container">
             <h1>
-                <img class="hero__logo" src="src/images/logo-spider.png" alt="">
+                <img class="hero__logo" src="dist/images/logo-spider.png" alt="">
             </h1>
         </div>
     </section>
@@ -123,17 +123,72 @@
     </section>
 
     <section class="show">
-        <div class="show__container container">
+        <div class="container">
             <h2 class="title--big">Saiba mais:</h2>
             <div class="linha"></div>
-            <div class="show__container__abas">
-                <button class=" button title--normal" data-tab-button="trailer">
-                    Trailer
-                </button>
-                <button class="button title--normal" data-tab-button="onde-assistir">
-                    Onde assistir
-                </button>
+            <nav class="show__tabs">
+                    <button class=" button title--normal show__tabs__button show__tabs__button--is-active" data-tab-button="trailer">
+                        Trailer
+                    </button>
+                    <button class="button title--normal show__tabs__button" data-tab-button="onde-assistir">
+                        Onde assistir
+                    </button>
+            </nav>
+
+            <div class="show__content show__content--is-active" id="trailer" data-tab-id="trailer">
+                <iframe src="https://www.youtube.com/embed/RJ-cYO4C4qU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <div class="show__content" data-tab-id="onde-assistir">
+                <div class="watch">
+                    <div class="watch__logo">
+                        <h3 class="text--big">Disponivel no Disney+</h3>
+                        <img src="dist/images/disney-plus-logo.png" alt="logo Disney+">
+                    </div>
+                    <div class="watch__info">
+                        <h3 class="text--big">Assinatura Disney+</h3>
+                        <ul class="watch__info__list">
+                            <li class="text--small watch__info__list__item">
+                                Assinatura Disney+ R$ 27,90/mês*
+                            </li>
+                            <li class="text--small watch__info__list__item">
+                                Assinatura Combo+ R$ 45,90/mês*
+                            </li>
+                            <li class="text--small watch__info__list__item">
+                                Assinatura Especial R$ 55,90/mês*
+                            </li>
+                        </ul>
+                        <h3 class="text--big">Dispositivos disponíveis</h3>
+                        <ul class="watch__info__list">
+                            <li class="text--small watch__info__list__item">
+                                TV
+                                <img src="dist/images/dispositivos/tv.png" alt="">
+                            </li>
+                            <li class="text--small watch__info__list__item">
+                                Computadores e Notebooks
+                                <img src="dist/images/dispositivos/computador.png" alt="">
+                            </li>
+                            <li class="text--small watch__info__list__item">
+                                Consoles
+                                <img src="dist/images/dispositivos/videogames.png" alt="">
+                            </li>
+                            <li class="text--small watch__info__list__item">
+                                Celulares e Tablets
+                                <img src="dist/images/dispositivos/celular.png" alt="">
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <a class="text--normal" href="https://www.disneyplus.com/pt-br/movies/homem-aranha-no-aranhaverso/OtXRBHlsLLV9" target="_blank">Assine agora, e assista o filme do nosso querido Spider!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container footer__container">
+            <h2 class="title--big">
+                Rodape
+            </h2>
         </div>
     </section>
 

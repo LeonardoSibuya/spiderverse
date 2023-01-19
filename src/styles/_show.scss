@@ -1,21 +1,107 @@
+@use 'variaveis';
+
 .show {
-
-    &__container {
-        text-align: center;
-
+    .container {
         h2 {
+            text-align: center;
+
             margin-top: 160px;
             margin-bottom: 2px;
         }
-
-        &__abas {
-            display: flex;
-            justify-content: space-around;
-        }
+    }
+    
+    &__tabs {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
 
         .button {
             font-size: 16px;
+            margin-bottom: 24px;
+            border: none;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        display: none;
+        
+        iframe {
+            max-width: 640px;
+            width: 100%;
+            height: 480px;
+            border-radius: 8px;
         }
 
+        &--is-active {
+            display: block;
+        }
+
+        a {
+            font-style: italic;
+            color: variaveis.$corBotao;
+            font-size: 18px;
+
+            &:hover {
+                letter-spacing: 1px;
+                transition: .5s ease;
+            }
+        }
+    }
+
+    .watch {
+        margin: 0 auto;
+        display: flex;
+        max-width: 800px;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 16px;
+        margin-bottom: 24px;
+
+        &__logo {
+            h3 {
+                font-size: 24px;
+                margin-bottom: 36px;
+                text-align: center;
+                text-decoration: underline;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            img {
+                max-width: 340px;
+                width: 100%;
+                height: 180px;
+            }
+        }
+
+        &__info {
+            
+            h3 {
+                font-size: 24px;
+                margin-bottom: 16px;
+                text-align: center;
+                text-decoration: underline;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            &__list {
+                padding: 0 16px;
+                margin-bottom: 24px;
+                text-align: center;
+                letter-spacing: 1px;
+
+                &__item {
+                    margin-bottom: 8px;
+                    align-items: center;
+
+                    img {
+                        max-width: 40px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
