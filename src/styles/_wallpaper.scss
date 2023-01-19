@@ -6,13 +6,27 @@
         margin: 0 auto;
         text-align: center;
 
+        @media (max-width: 768px) {
+            max-width: 768px;
+        }
+
         h2 {
             margin-top: 160px;
             margin-bottom: 2px;
+
+            @media (max-width: 768px) {
+                margin-top: 80px;
+            }
         }
 
         img {
             height: 480px;
+
+            @media (max-width: 768px) {
+                height: 220px;
+                max-width: 768px;
+                width: 100%;
+            }
         }
     }
 }

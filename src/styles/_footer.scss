@@ -1,12 +1,54 @@
+@use 'variaveis';
+
 .footer {
     margin-top: 160px;
-    margin-bottom: 2px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, darken(variaveis.$corDeFundo, 1%), lighten(variaveis.$corDeFundo, 5%));
+
+    @media (max-width: 768px) {
+        margin-top: 80px;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            max-width: 100px;
+            width: 100%;
+            height: 80px;
+
+            @media (max-width: 768px) {
+                max-width: 70px;
+                height: 60px;
+            }
+        }
+    }
 
     &__container {
 
         h2 {
             text-align: center;
-            
+            margin-bottom: 36px;
+            padding: 10px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        &__item {
+            &__link{
+                text-decoration: none;
+
+                &:hover {
+                    color: darken(variaveis.$corTitulo, 20%);
+                    transition: .3s ease;
+                }
+            }
         }
     }
 }

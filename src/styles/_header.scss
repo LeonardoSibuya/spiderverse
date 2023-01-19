@@ -4,8 +4,8 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 2;
-    background-color: lighten(variaveis.$corDeFundo, 3%);
+    z-index: 3;
+    background-image: linear-gradient(to top, darken(variaveis.$corDeFundo, 1%), lighten(variaveis.$corDeFundo, 5%));
 
     &__container {
         display: flex;
@@ -14,14 +14,27 @@
         padding: 8px 36px;
         width: 100%;
 
+        @media (max-width: 768px) {
+            justify-content: space-around;
+            padding: 6px 18px;
+        }
+
         img {
             max-width: 40px;
             width: 100%;
+
+            @media (max-width: 768px) {
+                max-width: 30px;
+            }
         }
     }
 
     &__links {
         display: flex;
+
+        @media (max-width: 768px) {
+            padding-top: 8px;
+        }
 
         &__item {
             margin: 6px;

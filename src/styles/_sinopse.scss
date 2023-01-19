@@ -5,6 +5,10 @@
         h2 {
             margin-top: 160px;
             margin-bottom: 2px;
+
+            @media (max-width: 768px) {
+                margin-top: 80px;
+            }
         }
     }
 
@@ -13,10 +17,20 @@
         display: flex;
         width: 100%;
 
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         img {
             max-width: 500px;
             margin-right: 36px;
             border-radius: 8px;
+
+            @media (max-width: 768px) {
+                max-width: 350px;
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
         }
 
         p {
