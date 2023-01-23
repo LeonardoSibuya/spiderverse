@@ -17,6 +17,14 @@
         display: flex;
         width: 100%;
 
+        @media (max-width: 1023px) {
+            display: block;
+
+            img {
+                margin-bottom: 16px;
+            }
+        }
+
         @media (max-width: 768px) {
             display: block;
         }
