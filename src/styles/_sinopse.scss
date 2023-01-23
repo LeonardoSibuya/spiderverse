@@ -19,10 +19,6 @@
 
         @media (max-width: 1023px) {
             display: block;
-
-            img {
-                margin-bottom: 16px;
-            }
         }
 
         @media (max-width: 768px) {
@@ -35,9 +31,16 @@
             border-radius: 8px;
 
             @media (max-width: 768px) {
-                max-width: 350px;
+                max-width: 250px;
+                width: 100%;
                 margin-right: 0;
                 margin-bottom: 16px;
+            }
+
+            @media (max-width: 1023px) {
+                    margin-bottom: 16px;
+                    max-width: 500px;
+                    width: 100%;
             }
         }
 

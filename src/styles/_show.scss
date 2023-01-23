@@ -24,6 +24,12 @@
             margin-bottom: 24px;
             border: none;
         }
+
+        @media (max-width: 767px) {
+            .button {
+                font-size: 11px;
+            }
+        }
     }
 
     &__content {
